@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class OrTest {
-/
+
     @Test
     public void compute() {
         Or or1 = new Or();

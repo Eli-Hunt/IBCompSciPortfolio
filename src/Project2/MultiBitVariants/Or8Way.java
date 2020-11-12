@@ -11,7 +11,7 @@ public class Or8Way {
             ors[i] = new Or();
         }
     }
-/
+
     public void compute(boolean[] in){
         ors[0].compute(in[0],in[1]);
         ors[1].compute(in[2],in[3]);

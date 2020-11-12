@@ -8,7 +8,7 @@ public class Or {
     public Nand nand1 = new Nand();
     public Or() {
 
-    /}
+    }
 
     public void compute(boolean a, boolean b){
         not1.compute(a);

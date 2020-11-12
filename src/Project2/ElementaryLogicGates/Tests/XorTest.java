@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class XorTest {
-/
+
     @Test
     public void compute() {
         Xor xor1 = new Xor();

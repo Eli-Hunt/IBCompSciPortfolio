@@ -6,7 +6,7 @@ public class Not {
     public Not() {
         nand1 = new Nand();
     }
-/
+
     public void compute(boolean in){
         nand1.compute(in,in);
         out = nand1.out;

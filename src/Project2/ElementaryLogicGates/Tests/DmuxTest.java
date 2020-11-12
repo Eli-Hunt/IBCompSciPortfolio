@@ -10,7 +10,7 @@ public class DmuxTest {
     @Test
     public void compute() {
         Dmux dmux1 = new Dmux();
-/
+
         dmux1.compute(false,false);
         assertEquals(false,dmux1.a);
         assertEquals(false,dmux1.b);

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static org.junit.Assert.*;
 
 public class NandTest {
-/
+
     @Test
     public void compute() {
         Nand nand1=new Nand();
