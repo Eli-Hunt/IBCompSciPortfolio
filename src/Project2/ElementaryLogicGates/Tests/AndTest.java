@@ -10,7 +10,7 @@ public class AndTest {
     @Test
     public void compute() {
         And and1 = new And();
-
+/
         and1.compute(true,true);
         assertEquals(true,and1.out);
 

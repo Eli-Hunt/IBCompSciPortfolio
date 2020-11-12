@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class Not16GateTest {
-
+/
     @Test
     public void compute() {
         Not16 not16 = new Not16();

@@ -10,7 +10,7 @@ public class Or16 {
             or16[i]=new Or();
         }
     }
-
+/
     public void compute(boolean[] a,boolean[] b){
         for (int i = 0; i < 16; i++) {
             or16[i].compute(a[i],b[i]);

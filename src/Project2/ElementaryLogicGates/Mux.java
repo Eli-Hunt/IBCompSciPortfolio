@@ -10,7 +10,7 @@ public class Mux {
     public Mux() {
 
     }
-
+/
     public void compute(boolean a, boolean b, boolean sel){
         not1.compute(sel);
         and1.compute(a,not1.out);

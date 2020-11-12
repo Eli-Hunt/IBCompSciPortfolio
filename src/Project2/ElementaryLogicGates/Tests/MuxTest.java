@@ -10,7 +10,7 @@ public class MuxTest {
     @Test
     public void compute() {
         Mux mux1 = new Mux();
-
+/
         mux1.compute(false,false,false);
         assertEquals(false,mux1.out);
 

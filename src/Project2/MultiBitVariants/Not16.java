@@ -11,7 +11,7 @@ public class Not16 {
             not16[i]=new Not();
         }
     }
-
+/
     public void compute(boolean[] in){
         for (int i = 0; i < 16; i++) {
             not16[i].compute(in[i]);

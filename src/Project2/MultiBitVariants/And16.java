@@ -10,7 +10,7 @@ public class And16 {
         for (int i = 0; i < 16; i++){
             and16[i] = new And();
         }
-    }
+    }/
     public void compute(boolean[] a,boolean[] b){
         for (int i = 0; i < 16; i++){
             and16[i].compute(a[i], b[i]);

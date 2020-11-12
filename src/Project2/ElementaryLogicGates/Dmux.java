@@ -8,7 +8,7 @@ public class Dmux {
     public And and1 = new And();
     public And and2 = new And();
     public Dmux() {
-
+/
     }
 
     public void compute(boolean in, boolean sel){

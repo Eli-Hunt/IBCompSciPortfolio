@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class Or8WayTest {
-
+/
     @Test
     public void compute() {
         Or8Way or8Way = new Or8Way();

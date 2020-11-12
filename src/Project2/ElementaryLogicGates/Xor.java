@@ -9,7 +9,7 @@ public class Xor {
     Or or1 = new Or();
 
     public Xor() {
-
+/
     }
 
     public void compute(boolean a, boolean b){
