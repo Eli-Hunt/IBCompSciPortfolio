@@ -20,8 +20,7 @@ public class Game extends JPanel {
     }
 
     private class ButtonListener implements ActionListener {
-        private int row;
-        private int column;
+
 
         @Override
         public void actionPerformed(ActionEvent event) {
@@ -29,6 +28,7 @@ public class Game extends JPanel {
             if (clickedButton.getText() != "X" && clickedButton.getText() != "O") {
                 if (xTurn) {
                     clickedButton.setText("X");
+                    clickedButton.setForeground(new Color(225,200,0));
                     xTurn = false;
                 } else {
                     clickedButton.setText("O");
@@ -38,32 +38,44 @@ public class Game extends JPanel {
             }
         }
 
-        private void colorChange() {
-            JFrame frame = new SetBackgroundColorInJLabel();
-            JFrame.setBackground(Color.GREEN);
+
+    }
+
+    private void checkForWin() {
+        checkThree(0, 1, 2);
+        checkThree(3, 4, 5);
+        checkThree(6, 7, 8);
+        checkThree(0, 3, 6);
+        checkThree(1, 4, 7);
+        checkThree(2, 5, 8);
+        checkThree(0, 4, 8);
+        checkThree(2, 4, 6);
+        if (checkCats()) {
+            System.out.println("Cats Game");
+        }
+
+
+    }
+
+    private boolean checkCats() {
+        boolean cats = true;
+        for (int i = 0; i < 9; i++) {
+            if (buttons[i].getText() != "X" && buttons[i].getText() != "O") {
+                cats = false;
+            }
+            }
+            return cats;
 
         }
 
-        private void checkForWin() {
-            checkThree(0, 1, 2);
-            checkThree(3, 4, 5);
-            checkThree(6, 7, 8);
-            checkThree(0, 3, 6);
-            checkThree(1, 4, 7);
-            checkThree(2, 5, 8);
-            checkThree(0, 4, 8);
-            checkThree(2, 4, 6);
-        }
-
-        private void checkThree(int a, int b, int c) {
+        private void checkThree ( int a, int b, int c){
             if (buttons[a].getText() == buttons[b].getText() && buttons[a].getText() == buttons[c].getText()) {
                 System.out.println("Win");
 
             }
-                        if ((buttons[row][column] == 'X') && (buttons[row][column] == 'O')) {
-                            System.out.println("Cats game");
-                        }
-                    }
-                }
-            }
-        
+        }
+    }
+
+
+
+
